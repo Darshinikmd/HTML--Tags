@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    #t1,td,th{
+        border:2px solid black;
+        border-style: groove;
+    }
+    #id1{
+        padding-right: 250px;
+        padding-bottom: 80px;
+    }
+    .r1{
+        padding-right: 26px;;
+    }
+    .r2{
+        padding-right: 40px;
+    }
+</style>
+    </head>
+    <body>
+        <table id="t1">
+            <tr>
+                <td>Name</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><b><center>Pizza Shop 2.0</b></td>
+            </tr>
+            <tr>
+                <td class="r1">Pizza Topping</td>
+                <td  class="r2"><input type="radio" name="toppings" value="Supreme">Supreme<br>
+                    <input type="radio" name="toppings" value="Vegetarian">Vegetarian<br>
+                    <input type="radio" name="toppings" value="Hawaiian">Hawaiian<br>
+                </td>
+            </tr>
+            <tr>
+                <td class="r1">Pizza Sauce</td>
+                <td class="r2"><select>
+                    <option>Tomato</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="r1">
+                    Optional Extras
+                </td>
+                <td class="r2"> <input type="checkbox" name="option" value="Extra Cheese">Extra Cheese
+                    <input type="checkbox" name="option" value="Gluten Free Base">Gluten Free Base
+       
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Delivery Instruction:<br>
+                <textarea id="id1"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <button>Send my Order</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
